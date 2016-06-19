@@ -1,0 +1,157 @@
+.room_body {
+	width: 960px;
+	height: 100%;
+}
+.room_wrapper {
+       width:500px;
+	   height:600px;
+	   margin:10px auto;
+	   font-family:'Droid Serif',serif;
+}
+
+.room_main {
+		width:368px;
+		float:left;
+		padding:30px 40px;
+		box-shadow:0 0 3px;
+		border-radius:2px;
+		margin-top:7px;
+		color:#1b5e20;
+}
+
+.room_header {
+       color:green;
+	   font-family:'Droid Serif',serif;
+	   margin-top:30px;
+	   margin-left:370px;
+}
+.room_header>h3 {
+	border-bottom: 2px solid grey;
+	width: 300px;
+	font-size:24px;
+}
+.room_header>a {
+	text-decoration: none;
+	font-size: 20px;
+}
+.room_label {
+		font-weight:700;
+		display:inline-block;
+		width:120px;
+		text-align:left;
+}
+/*input[type=text]
+input[type=password],
+select*/
+ .room_input {
+		padding:3px;
+		border-radius:3px;
+		margin-left:8px;
+		border:2px solid #d0cdd1;
+		width:40%;
+		height:30px;
+		margin-bottom:20px;
+		margin-top:10px;
+		display:inline-block;
+		
+}
+
+input[type=submit] {
+	  margin-left:150px;
+}
+.room_btn{
+	text-transform: capitalize;
+		width: 25% !important;
+		height: 35px;
+		text-align: center;
+		background: #32A2E3;
+		font-family: 'Open Sans', sans-serif;
+		color: #FFF;
+		padding: 8px;
+		border: none;
+		transition: 0.5s all;
+		-webkit-transition: 0.5s all;
+		-moz-transition: 0.5s all;
+		-o-transition: 0.5s all;
+		outline: none;
+		cursor: pointer;
+}
+form {
+		font-size:15px;
+		margin-top:30px;
+		margin-left: 450px;
+}
+
+.rdo_g {
+	margin-bottom: 10px;
+	display: block;
+	padding-left: 240px;
+}
+
+.lbl
+{
+   padding-left:550px;
+}
+
+.room_main div
+{
+	position:relative;
+	width:600px;
+}
+
+.room_container div label:nth-of-type(2)
+{
+	position: absolute;
+	right: 10px;
+	bottom: -2px;
+	color: red;
+	width: 400px;
+}
+
+.reg_Form div .er_status
+{
+	position: absolute;
+	right: 10px;
+	bottom: -2px;
+	color: #FF0000;
+	width: 450px;
+}
+
+.room_textarea {
+    	padding:3px;
+		border-radius:3px;
+		margin-left:11px;
+		border:2px solid #d0cdd1;
+		width:40%;
+		height:80px;
+		margin-bottom:20px;
+		margin-top:10px;
+		display:inline-block;
+}
+.fileUpload {
+    position: relative;
+	display: inline-block;
+	font-size: 14px;
+	width: 90px !important;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: -9;
+	right: 20;
+    margin: 0;
+	
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+	width:73px;
+}
+
+.room_span{
+	background-color:  #9e9e9e;
+	padding: 3px 12px;
+	border-radius: 3px;
+	color: #FFF;
+	
+}

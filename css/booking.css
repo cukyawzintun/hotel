@@ -1,0 +1,307 @@
+#available_container {
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+#available_container>hr {
+	width: 80%;
+	border-bottom: 2px solid black;
+}
+.check_info {
+	width: 500px;
+	margin-left: 550px;
+}
+.check_details>h2 {
+	margin-left: -70px;
+	font-size: 45px;
+	color: #32A2E3;
+}
+.check_details, .info {
+	margin-bottom: 30px;
+	width: 500px;
+}
+.info>h4 {
+	font-size: 20px;
+	display: inline;
+}
+.info_left {
+	float: right;
+	width: 150px;
+	margin-right: 180px;
+}
+.available_room {
+	width: 1200px;
+	margin: 50px auto 50px;
+}
+.single_room, .double_room , .twin_room {
+	width: 350px;
+	float: left;
+	background: #eee;
+	padding-top: 20px;
+	padding-left: 5px;
+	padding-right: 5px;
+	min-height: 500px;
+}
+.single_room {
+	margin-left: 50px;
+	margin-right: 25px;
+	
+}
+.double_room {
+	margin-right: 25px;
+	
+}
+.twin_room {
+	
+}
+.text_container {
+	width: 300px;
+	margin: 0 auto;
+}
+.text_container>h2 {
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+.text_container>p {
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+.text {
+	width: 300px;
+	margin: 15px auto 0;
+}
+.text>h4 {
+	font-size: 16px;
+	display: inline;
+}
+.text_left {
+	display: inline;
+	margin-left: -100px;
+	width: 150px;
+	float: right;
+}
+.book_btn {
+	margin-top: 30px;
+	margin-left: 475px;
+	width:50%;
+}
+.book {
+	text-transform: capitalize;
+	width: 50% !important;
+	height: 50px;
+	background: #32A2E3;
+	font-family: 'Open Sans', sans-serif;
+	color: #FFF;
+	padding: 8px;
+	border: none;
+	font-size: 1em;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	outline: none;
+	cursor: pointer;
+}
+.clear {
+	clear: both;
+}
+
+/*start for booking requirement page*/
+	.radio_btn {
+		font-size: 30px;
+		font-weight: bold;
+	}
+input[type='radio'] {
+	display:inline-block;
+    width:22px;
+    height:22px;
+    margin:-1px 25px 0 0;
+    vertical-align:middle;
+    cursor:pointer;
+    -moz-border-radius:  50%;
+    border-radius:  50%;
+	}
+.registered_user {
+	width: 400px;
+	border: 1px solid black;
+	background: #EEEEEE;
+	margin: 40px auto 200px;
+}
+.login_header {
+	width:400px;
+	line-height: 30px;
+	background: #8BC34A;
+	border-top: 1px solid grey;
+	border-bottom: 1px solid black;
+}
+.login_header>h2 {
+	font-weight: normal;
+	margin-left: 5px;
+}
+.login_wrap {
+	width: 100%;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+.login_label {
+	width: 100px;
+}
+.login_input {
+	width: 200px;
+	float: right;
+}
+.login_input>input {
+	height: 20px;
+	width: 200px;
+	margin-left: -250px;
+}
+.login_btn {
+	width:200px;
+	margin-top: 20px;
+	margin-left: 120px;
+	margin-bottom: 20px;
+}
+.login_btn>input {
+	text-transform: capitalize;
+	width: 50% !important;
+	line-height: 15px;
+	background: #32A2E3;
+	font-family: 'Open Sans', sans-serif;
+	color: #FFF;
+	padding: 8px;
+	border: none;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	outline: none;
+	cursor: pointer;
+}
+.card_radio_group {
+	margin-bottom: 30px;
+}
+.card_radio_btn {
+	font-size: 20px;
+}
+.save_btn>input{
+	text-transform: capitalize;
+	width: 25% !important;
+	height: 40px;
+	text-align: center;
+	background: #32A2E3;
+	font-family: 'Open Sans', sans-serif;
+	color: #FFF;
+	padding: 8px;
+	border: none;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	outline: none;
+	cursor: pointer;
+}
+/*end of booking requirement page*/
+
+/*booking form final step*/
+.head_section{
+	width: 100%;
+	border: 1px solid #ddd;
+	background: #F4F9FB;
+	margin-top: -20px;
+	cursor: pointer;
+}
+.head_section>h2{
+	width: 500px;
+	font-size: 20px;
+	margin-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: black;
+}
+#booking_wrapper {
+	width: 100%;
+	min-height: 350px;
+	border: 1px solid #DDDDDD;
+	padding-bottom: 50px;
+	margin-bottom: 50px;
+	padding-top: 20px;
+}
+#personal_wrapper{
+	width: 100%;
+	min-height: 300px;
+	border: 1px solid #DDDDDD;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	margin-bottom: 50px;
+}
+#payment_field {
+	width: 100%;
+	border: 1px solid #DDDDDD;
+	padding-bottom: 35px;
+	border-radius: 3px;
+}
+.payment_heading {
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 20px;
+	background: #F4F9FB;
+	margin-top: -20px;
+}
+.payment_heading>h2 {
+	font-size: 20px;
+	color: black;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-left: 20px;
+}
+.caption {
+	font-size: 14px;
+	font-weight: normal;
+	display: block;
+	margin-bottom: 20px;
+	color: red;
+}
+.booking_details_result {
+	width: 800px;
+	margin: 25px auto 0;
+}
+.result_wrapper {
+	width: 400px;
+	margin-left: 70px;
+}
+.label {
+	width: 200px;
+	float: left;
+	font-size: 16px;
+}
+.details_result {
+	float: left;
+	width: 200px;
+	font-size: 20px;
+	margin-bottom: 25px;
+}
+.btn_wrapper {
+	width: 300px;
+	margin: 0px auto 0;
+}
+.book_finish {
+	margin-top: 20px;
+	margin-left: 20px;
+}
+.book_finish {
+	text-transform: capitalize;
+	width: 30% !important;
+	height: 40px;
+	background: #32A2E3;
+	font-family: 'Open Sans', sans-serif;
+	color: #FFF;
+	padding: 8px;
+	border: none;
+	font-size: 1em;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	outline: none;
+	cursor: pointer;
+}
+/*end of booking form final step design*/
