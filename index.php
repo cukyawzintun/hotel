@@ -1,5 +1,6 @@
 
 	<?php 
+		//test
 		include 'src/db_connect.php';
 		session_start();
 		$query = "SELECT room_db.room_type ,room_db.room_image , room_type.name, room_db.price
