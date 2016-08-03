@@ -45,7 +45,6 @@
 				<td class="table_data"><?php echo $row['rating']; ?></td>
 				<td class="table_data"><?php echo $row['location_name']; ?></td>
 				<td class="table_data">
-					<a href="print.php">Print</a>
 					<a href="update_hotel.php?id=<?php echo $row['id']; ?>">Update &nbsp;</a>
 					<a href="javascript:del_confirm(<?php echo $row['id']; ?>)">Delete</a>
 				</td>

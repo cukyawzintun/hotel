@@ -23,7 +23,7 @@ include '../header.php';
 				<label class="label">Password :</label>
 				<input type="password" name="password" id="password" required="required" class="input">
 				<input type="submit" name="login" id="login" value="Login">
-                <span id="span"><a href="user_reg.php">Create New Register</a></span>
+                <span id="span"><a href="user_reg.php">Create New User</a></span>
 			</form>
 		</div>
 	</div>

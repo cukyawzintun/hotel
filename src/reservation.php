@@ -122,7 +122,7 @@
 		        }
 		    });
 		    
-		    /*the filled date will be remain when backward button click ,the following script will be load*/
+		    /*form date will be remain when backward button click ,the following script will be load*/
 
 		    var checkInEmpty = false;
 		    var checkOutEmpty = false;

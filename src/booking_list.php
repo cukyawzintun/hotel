@@ -24,7 +24,7 @@
 							FROM booking AS b
 							INNER JOIN user AS u ON b.user_id = u.id
 							INNER JOIN Payment AS p ON b.id = p.booking_id
-							INNER JOIN hotel AS h ON b.hotel_id = h.id";
+							INNER JOIN hotel AS h ON b.hotel_id = h.id ORDER BY b.id DESC";
 				$result = mysqli_query($con,$query);
 			 ?>
 			<tr class="header_row">

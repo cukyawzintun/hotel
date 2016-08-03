@@ -28,51 +28,7 @@
 	</script>
 </head>
  <body>
- 	<div id="available_container">
- 		<!-- <div class="check_info">
- 			<header class="check_details" style="margin-bottom: 30px;">
-				<h2>Your Checking Details</h2>
-			</header>
- 			<div class="info">
- 				<h4>Adult:</h4>
- 				<div class="info_left">
- 					<?php echo $adult; ?> &nbsp; Person
- 				</div>
- 			</div>
- 			<div class="info">
- 				<h4>Child:</h4>
- 				<div class="info_left">
- 					<?php echo $childern; ?> &nbsp; Person
- 				</div>
- 			</div>
- 			<div class="info">
- 				<h4>Hotel Name:</h4>
- 				<div class="info_left">
- 					<?php switch($hotel_name){
- 						case 14: echo "Sedona";
- 						break;
-
- 						case 16: echo "Hotel Mandalay";
- 						break;
-
- 						default: echo "Hotel Bagan";
- 					} ?>
- 				</div>
- 			</div>
- 			<div class="info">
- 				<h4>Check In:</h4>
- 				<div class="info_left">
- 					<?php echo $check_in_date; ?>
- 				</div>
- 			</div>
- 			<div class="info">
- 				<h4>Check Out:</h4>
- 				<div class="info_left">
- 					<?php echo $check_out_date; ?>
- 				</div>
- 			</div>
- 		</div> -->
-		
+ 	<div id="available_container">		
  		<div class="available_room">
  			<form action="booking_requirement.php" method="POST">
  				<input type='hidden' name='check_in_date' value='<?php echo $check_in_date; ?>'>

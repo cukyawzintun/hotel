@@ -3,8 +3,8 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 30, 2016 at 12:44 PM
--- Server version: 5.5.27
+-- Generation Time: Aug 03, 2016 at 03:46 PM
+-- Server version: 5.5.46-log
 -- PHP Version: 5.4.7
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
@@ -38,7 +38,20 @@ CREATE TABLE IF NOT EXISTS `booking` (
   `total_room` int(11) NOT NULL,
   `total_cost` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
+
+--
+-- Dumping data for table `booking`
+--
+
+INSERT INTO `booking` (`id`, `booking_date`, `hotel_id`, `user_id`, `check_in_date`, `check_out_date`, `adult`, `child`, `total_room`, `total_cost`) VALUES
+(1, '2016-07-29', 14, 2, '2016-08-25', '2016-08-31', 1, 1, 2, 260),
+(2, '2016-07-29', 14, 5, '2016-09-10', '2016-09-17', 1, 1, 1, 120),
+(3, '2016-07-29', 14, 3, '2016-08-01', '2016-08-10', 1, 0, 2, 240),
+(4, '2016-07-29', 16, 3, '2016-08-09', '2016-08-15', 1, 1, 4, 500),
+(5, '2016-07-29', 16, 3, '2016-08-15', '2016-08-20', 1, 0, 3, 390),
+(6, '2016-07-29', 17, 3, '2016-08-19', '2016-08-25', 1, 0, 2, 260),
+(7, '2016-07-29', 17, 3, '2016-08-24', '2016-08-31', 1, 0, 3, 380);
 
 -- --------------------------------------------------------
 
@@ -51,7 +64,30 @@ CREATE TABLE IF NOT EXISTS `booking_room` (
   `booking_id` int(11) NOT NULL,
   `room_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=18 ;
+
+--
+-- Dumping data for table `booking_room`
+--
+
+INSERT INTO `booking_room` (`id`, `booking_id`, `room_id`) VALUES
+(1, 1, 63),
+(2, 1, 64),
+(3, 2, 52),
+(4, 3, 52),
+(5, 3, 53),
+(6, 4, 83),
+(7, 4, 84),
+(8, 4, 94),
+(9, 4, 95),
+(10, 5, 85),
+(11, 5, 96),
+(12, 5, 104),
+(13, 6, 114),
+(14, 6, 135),
+(15, 7, 115),
+(16, 7, 125),
+(17, 7, 126);
 
 -- --------------------------------------------------------
 
@@ -66,14 +102,7 @@ CREATE TABLE IF NOT EXISTS `feedback` (
   `description` text NOT NULL,
   `date` date NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
-
---
--- Dumping data for table `feedback`
---
-
-INSERT INTO `feedback` (`id`, `name`, `email`, `description`, `date`) VALUES
-(1, 'Kyaw Zin Tun', 'kyawzintun@gmail.com', 'feedback feedback feedback feedback ', '2016-03-30');
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -137,7 +166,20 @@ CREATE TABLE IF NOT EXISTS `payment` (
   `last_name` varchar(50) NOT NULL,
   `expire_date` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
+
+--
+-- Dumping data for table `payment`
+--
+
+INSERT INTO `payment` (`id`, `booking_id`, `user_id`, `payment_type`, `card_number`, `first_name`, `last_name`, `expire_date`) VALUES
+(1, 1, 2, 'Cash', 0, '00', '00', '00/00'),
+(2, 2, 5, 'Cash', 0, '00', '00', '00/00'),
+(3, 3, 3, 'Visa Card', 11225554, 'User', 'One', '12/2017'),
+(4, 4, 3, 'Cash', 0, '00', '00', '00/00'),
+(5, 5, 3, 'Cash', 0, '00', '00', '00/00'),
+(6, 6, 3, 'Cash', 0, '00', '00', '00/00'),
+(7, 7, 3, 'Cash', 0, '00', '00', '00/00');
 
 -- --------------------------------------------------------
 
@@ -292,17 +334,20 @@ CREATE TABLE IF NOT EXISTS `user` (
   `password` varchar(50) NOT NULL,
   `confirm_password` varchar(50) NOT NULL,
   `status` int(11) NOT NULL DEFAULT '0',
+  `created` date NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
 --
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`id`, `first_name`, `last_name`, `nrc_no`, `phone_no`, `email`, `address`, `password`, `confirm_password`, `status`) VALUES
-(1, 'Admin', '', '123', 123, 'admin@gmail.com', 'Yangon', 'admin', 'admin', 1),
-(2, 'Test', 'User', '456', 456, 'test@gmail.com', 'Yangon', 'test', 'test', 0),
-(3, 'User', 'One', '789', 789, 'user@gmail.com', 'Yangon', 'user', 'user', 0);
+INSERT INTO `user` (`id`, `first_name`, `last_name`, `nrc_no`, `phone_no`, `email`, `address`, `password`, `confirm_password`, `status`, `created`) VALUES
+(1, 'Admin', '', '123', 123, 'admin@gmail.com', 'Yangon', 'admin', 'admin', 1, '0000-00-00'),
+(2, 'Test', 'User', '456', 456, 'test@gmail.com', 'Yangon', 'test', 'test', 0, '0000-00-00'),
+(3, 'User', 'One', '789', 789, 'user@gmail.com', 'Yangon', 'user', 'user', 0, '0000-00-00'),
+(4, 'Graiden', 'Harper', '587', 459, 'fewaxixaju@yahoo.com', 'Enim ex dolor blanditiis consectetur molestiae consectetur nisi ipsum, dolorum facilis unde nobis enim veniam, vel vel consequuntur pariatur.', 'Pa$$w0rd!', 'Pa$$w0rd!', 0, '2016-07-29'),
+(5, 'User', 'One', '123', 123, 'userone@gmail.com', 'YGN', '', '', 0, '0000-00-00');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
