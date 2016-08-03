@@ -1,6 +1,5 @@
 # hotel
 Project for Student
-This is my first PHP base project.
 This project was dedicated to student not for real. 
 I managed this project as project manager. 
 I only wrote all the backend codes. 
