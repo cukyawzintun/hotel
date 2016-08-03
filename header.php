@@ -1,4 +1,5 @@
 <?php 
+	//test
 	$url = "http://".$_SERVER['HTTP_HOST'].dirname($_SERVER["SCRIPT_NAME"]);
 	$url1 = str_replace("/src","","http://".$_SERVER['HTTP_HOST'].dirname($_SERVER["SCRIPT_NAME"]));
  ?>
